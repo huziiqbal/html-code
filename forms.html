@@ -5,6 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS IN HTML</title>
+    <style>
+    body {
+        background-color: rgb(171, 193, 192);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    h2 {
+        color: #003333;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    form, body > div {
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        color: #003333;
+        margin-top: 10px;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        box-sizing: border-box;
+        transition: 0.3s;
+    }
+
+    input:focus, select:focus {
+        border-color: #008080;
+        box-shadow: 0 0 5px #66b2b2;
+        outline: none;
+    }
+
+    /* Radio Buttons */
+    .radio-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .radio-group label {
+        font-weight: normal;
+        margin-left: 5px;
+    }
+
+    input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+    }
+</style>
+
 </head>
 
 <body style="background-color: rgb(171, 193, 192) ;">
@@ -45,17 +113,12 @@
             <option value="Other"> Other </option>
         </select>
     </div>
-    <h2> your name is :</h2>
-    <div>
-        <input id="huji" type="radio" name="huzi" value="huji">
-        <label for="huji">HUJI</labelvalue>
-        
-        <input id="huzaifa" type="radio" name="huzi" value="huzaifa">
-        <label for="huzaifa">HUZAIFA</label>
-        
-        <input id="huzaifaa" type="radio" name="huzi" value="huzaifaa">
-        <label for="huzaifaa">HUZAIFAA</label>
-    </div>
-</body>
+    <h2>Your name is:</h2>
+<div class="radio-group">
+    <label><input type="radio" name="huzi" value="huji"> HUJI</label>
+    <label><input type="radio" name="huzi" value="huzaifa"> HUZAIFA</label>
+    <label><input type="radio" name="huzi" value="huzaifaa"> HUZAIFAA</label>
+</div>
+
 
 </html>

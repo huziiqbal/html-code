@@ -1,88 +1,130 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE CREATED IN LAB</title>
 
-<title> WEBSITE CREATED IN LAB</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-<body style="background-color: pink ;">
-    <center>
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+        }
 
-    <h1>SELF INTRODUCTION :</h1>
-    <hr>
-    <h1>HUZAIF IQBAL </h2>
+        h1 {
+            color: #c2185b;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #880e4f;
+            margin: 15px 0 5px;
+        }
+
+        h3 {
+            color: #444;
+            margin: 5px 0 15px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ffc1e3;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        img {
+            border-radius: 10px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a img {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        a img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        video {
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Optional hover animation for sections */
+        h2:hover,
+        h3:hover {
+            color: #e91e63;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>SELF INTRODUCTION :</h1>
         <hr>
-        <h2> NAME: <br>
-            <h3>HUZAIFA IQBAL</h3><hr>
-        <img src ="huzaifa.jpg" height = "150" width = 180>
-            <hr>
-        <h2> PLACE OF BIRTH : <br>
-            <h3> MUZAFFARNAGAR</h3>
-        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/India_Uttar_Pradesh_districts_2012_Muzaffarnagar.svg/250px-India_Uttar_Pradesh_districts_2012_Muzaffarnagar.svg.png" height ="150"
-        </h2>
-        <hr>        
-        <h2> COLLEGE : <br>
-            <h3> NIET</h3>
-            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EkmkEKLKZTJYNbNgEUYe0m3mntlnImhQVw&s" height ="150" width = 180>
-        </h2>
-        <hr>
-        <h2> 
-              
-            </h2>
-            <h3> Click on the image to check my Github <br><a href="https://github.com/huziiqbal"target="_blank"><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84sIw0DFH-xpNcm4RTHWQ4iof5bHqu0V_bw&s" height="123"> </a>
-      
+
+        <h1>HUZAIFA IQBAL</h1>
         <hr>
 
-        <h2> COURSE : <br>
-            <h3> COMPUTER SCIENCE<h3>
-                    <h2>
-                        <hr>
-        <h2> FORM FOR YOUR APPICATION </h2>
-            <div> 
-                <label for = "Name "> NAME : </label>
-                <input type = "text" placeholder="your name "><br></br>
-            </div>
-            <div> 
-                <label for = "COLLEGE "> COLLEGE: </label>
-                <input type = "text" placeholder="college's name "><br></br>
-            </div>
-            <div> 
-                <label for = "COURSE"> COURSE : </label>
-                <input type = "text" placeholder="course's name "><br></br>
-            </div>
-            <div> 
-                <label for = "phone "> phone.no : </label>
-                <input type = "tel" placeholder="your phone number"><br></br>
-            </div>
-            <div> 
-                <label for = "email"> E-mail : </label>
-                <input type = "mail" placeholder="your email "><br></br>
-            </div>
-             <div> 
-                <label for = "password"> Password : </label>
-                <input type = "password" placeholder="your email "><br></br>
-            </div>
-             <div> 
-                <label for = "date"> Date: </label>
-                <input type = "date" placeholder="date "><br></br>
-            </div>    
-            <div> 
-            <label for = "gender"> Gender</label>
-                <select id = "gender" >
-                     <option value = " " disabled selected >GENDER </option>
-                    <option value = "male" > Male</option>
-                    <option value = "female" > female</option>
-                    <option value = "Other" > Other </option>
-                </select>
-            </div>
-             <div> 
-            <label for = "age"> age</label>
-                <select id = "age" >
-                    <option value = " " disabled selected>AGE</option>
-                    <option value = "minor" >Minor</option>
-                    <option value = "young" >Young</option>
-                    <option value = "old" >Old</option>
-                </select>
-            </div>
-        </center>
+        <h2>NAME:</h2>
+        <h3>HUZAIFA IQBAL</h3>
+        <hr>
+
+        <img src="huzaifa.jpg" height="150" width="180">
+        <hr>
+
+        <h2>PLACE OF BIRTH:</h2>
+        <h3>MUZAFFARNAGAR</h3>
+        <a href="https://en.wikipedia.org/wiki/Muzaffarnagar" target="_blank" >
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/India_Uttar_Pradesh_districts_2012_Muzaffarnagar.svg/250px-India_Uttar_Pradesh_districts_2012_Muzaffarnagar.svg.png"
+            height="150">
+        </a>
+        <hr>
+
+        <h2>COLLEGE:</h2>
+        <h3>NIET</h3>
+        <a href="https://www.niet.co.in/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EkmkEKLKZTJYNbNgEUYe0m3mntlnImhQVw&s"
+                height="150" width="180">
+        </a>
+        <hr>
+
+        <h3>Click on the image to check my Github</h3>
+        <a href="https://github.com/huziiqbal" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84sIw0DFH-xpNcm4RTHWQ4iof5bHqu0V_bw&s"
+                height="123">
+        </a>
+        <hr>
+
+        <h2>COURSE:</h2>
+        <h3>COMPUTER SCIENCE</h3>
+        <hr>
+
+        <h2>KOHLI</h2>
+        <video width="226" controls muted autoplay loop>
+            <source src="kohli gif.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
+
 </html>
